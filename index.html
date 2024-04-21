@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios con Stripe</title>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 10px solid #fde131; /* Color amarillo para los bordes */
+            font-family: Arial, sans-serif;
+        }
+        stripe-pricing-table {
+            width: 100%; /* Ocupa todo el ancho disponible */
+            overflow-x: auto; /* Permite desplazamiento horizontal si es necesario */
+        }
+        @media (max-width: 600px) { /* Estilos específicos para pantallas pequeñas */
+            stripe-pricing-table {
+                font-size: 14px; /* Reduce el tamaño de la fuente para dispositivos móviles */
+            }
+        }
+        .boton-atras {
+            background-color: #fde131; /* Color amarillo del botón */
+            color: black; /* Texto en color negro */
+            padding: 10px 20px;
+            text-decoration: none;
+            position: fixed;
+            bottom: 20px; /* Posición fija en la parte inferior */
+            right: 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <stripe-pricing-table pricing-table-id="prctbl_1P81g0CKBPdbXEK11Ko4KfS1"
+    publishable-key="pk_live_51JuFsECKBPdbXEK1gDmpya1L7DquBfcQSUuLgvQ0E79uKQ2ckPrryORDOS1uKlukgoK3cz50yzbpMwmQ7Nte9CsJ00OxARLwKE">
+    </stripe-pricing-table>
+    <a href="https://linktr.ee/cheapclick.entretenimiento.ao" class="boton-atras">Volver Atrás</a>
+</body>
+</html>
